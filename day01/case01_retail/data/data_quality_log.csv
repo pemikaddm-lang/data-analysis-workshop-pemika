@@ -1,0 +1,9 @@
+Issue,Field_Row,Evidence,Decision,Reason
+Category consistency,"Region, row 5",'south',Standardize,Same region label standardized to South
+Category consistency,"Region, row 19",' SOUTH ',Standardize,Same region label standardized to South
+Category consistency,"Category, row 24",Electronic vs Electronics,Standardize,Both labels refer to the same product category
+Duplicate,row 262,Exact duplicate of an earlier complete record,Remove duplicate,No transaction ID exists; retained the first identical record
+Missing value,"Sales, row 33",Blank Sales; Cost=640.22 and Profit=165.21,Flag,Do not infer Sales without a source record; Cost + Profit would be 805.43
+Missing value,"Profit, row 34",Blank Profit; Sales=4113.60 and Cost=2321.79,Flag,Do not infer Profit without a source record; Sales - Cost would be 1791.81
+Suspicious value,"Quantity, row 79",Quantity=-2,Investigate,May represent a return; changing it would alter sales volume
+Suspicious value,"Discount, row 57",Discount=2.50 while most values are between 0 and 0.30,Investigate,Unit is unconfirmed; do not change 2.50 to 0.025 by assumption
